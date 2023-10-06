@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - indicate start point for program
+ * main - Program executes to display size of various types
  *
- * printf - print desired output
- *
- * return: always 0 (success)
+ * Return: Always 0 (SUCCESS)
  */
 
 int main(void)
