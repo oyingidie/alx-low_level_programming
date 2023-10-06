@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - indicate start point for program
+ * main - Display inputted string followed by a newline
  *
- * printf - print desired string
- *
- * return: always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
