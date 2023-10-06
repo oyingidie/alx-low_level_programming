@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program executes from here
+ * main - Display string upon execution of the program
  *
  * Return: Always 0 (SUCCESS)
  */
