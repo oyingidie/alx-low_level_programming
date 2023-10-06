@@ -3,7 +3,7 @@
 /**
  * main - Display inputted string followed by a newline
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (SUCCESS)
  */
 
 int main(void)
