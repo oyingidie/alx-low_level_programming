@@ -3,9 +3,7 @@
 /**
  * main - start program
  *
- * write - input data
- * 
- * return: always 1 (Error)
+ * Return: always 1 (FAILURE)
  */
 
 int main(void)
