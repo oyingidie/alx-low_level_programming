@@ -3,7 +3,7 @@
 /**
  * main - Print string to standard error
  *
- * Return: always 1 (FAILURE)
+ * Return: Always 1 (FAILURE)
  */
 
 int main(void)
