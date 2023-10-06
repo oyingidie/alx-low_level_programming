@@ -1,9 +1,12 @@
+#include <stdio.h>
+
 /**
- * main - data entry
+ * main - to input required program
+ *
+ * puts - to print string
  *
  * return: always 0 (success)
  */
-#include <stdio.h>
 
 int main(void)
 {
