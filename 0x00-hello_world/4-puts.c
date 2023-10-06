@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - to input required program
+ * main - program executes from here
  *
- * puts - to print string
- *
- * return: always 0 (success)
+ * Return: Always 0 (SUCCESS)
  */
 
 int main(void)
