@@ -13,7 +13,7 @@ int main(void)
 	while (i <= 122)
 	{
 		putchar(i);
-		n++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
