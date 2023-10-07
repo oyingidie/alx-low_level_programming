@@ -8,12 +8,18 @@
 
 int main(void)
 {
-	char i, c;
+	int i = 97, c = 65;
 
-	for (i = 'a'; i <= 'z'; i++)
+	while (i <= 122)
+	{
 		putchar(i);
-	for (c = 'A'; c <= 'Z'; c++)
+		i++;
+	}
+	while (c <= 90)
+	{
 		putchar(c);
-		putchar('\n');
+		c++;
+	}
+	putchar('\n');
 	return (0);
 }
