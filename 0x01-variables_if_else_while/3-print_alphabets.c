@@ -3,17 +3,17 @@
 /**
  * main - Display characters based on set condition
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (SUCCESS)
  */
 
 int main(void)
 {
-	char c, d;
+	char i, c;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (i = 'a'; i <= 'z'; i++)
+		putchar(i);
+	for (c = 'A'; c <= 'Z'; c++)
 		putchar(c);
-	for (d = 'A'; d <= 'Z'; d++)
-		putchar(d);
 		putchar('\n');
 	return (0);
 }
