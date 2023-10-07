@@ -8,10 +8,13 @@
 
 int main(void)
 {
-	char i;
+	int i = 97;
 
-	for (i = 'a'; i <= 'z'; i++)
+	while (i <= 122)
+	{
 		putchar(i);
-		putchar('\n');
+		n++;
+	}
+	putchar('\n');
 	return (0);
 }
