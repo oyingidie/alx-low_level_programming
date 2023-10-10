@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - Displays string 
+ * main - Displays string
  *
  * Return: Always 0 (SUCCESS)
  */
