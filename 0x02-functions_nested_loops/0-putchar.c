@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - Display characters based on set conditions
+ * main - Display string 
  *
  * Return: Always 0 (SUCCESS)
  */
