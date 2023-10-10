@@ -2,8 +2,6 @@
 
 /**
  * print_alphabet - Display inputted alphabet
- *
- * Return: Always 0 (SUCCESS)
  */
 
 void print_alphabet(void)
