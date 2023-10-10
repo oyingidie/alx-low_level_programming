@@ -2,6 +2,7 @@
 
 /**
  * print_times_table - Display the n times table from zero
+ * @n: Referenced number
  */
 
 void print_times_table(int n)
