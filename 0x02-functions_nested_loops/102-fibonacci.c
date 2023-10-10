@@ -2,7 +2,7 @@
 
 /**
  * main - Display the first fifty Fibonacci numbers
- * 
+ *
  * Return: Always 0 (SUCCESS)
  */
 
