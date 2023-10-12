@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - Display numbers zero to fourteen miultiple times
+ * more_numbers - Display numbers zero to fourteen multiple times
  */
 
 void more_numbers(void)
