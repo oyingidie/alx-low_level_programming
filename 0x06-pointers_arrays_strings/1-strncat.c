@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strncat - Concatenates two strings using most bytes a string
- * @dest: First string
- * @src: Second string
- * @n: Number of bytes
+ * _strncat - Concatenates two strings using most bytes from a string
+ * @dest: Destination string
+ * @src: Source string
+ * @n: Size of function
  *
  * Return: Pointer to final string
  */
