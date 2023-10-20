@@ -2,10 +2,10 @@
 
 /**
  * _strcat - Concatenates two strings
- * @dest: First string 
+ * @dest: First string
  * @src: Second string
  *
- * Return: A pointer to final string
+ * Return: Pointer to final string
  */
 
 char *_strcat(char *dest, char *src)
