@@ -1,12 +1,12 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * argstostr - main entry
- * @ac: int input
- * @av: double pointer array
+ * argstostr - Concatenates all arguments into a string
+ * @ac: Number of arguments
+ * @av: Array of pointers to arguments
  *
- * Return: 0
+ * Return: Pointer to new string, or NULL if it fails
  */
 
 char *argstostr(int ac, char **av)
