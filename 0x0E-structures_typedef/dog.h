@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
 * struct dog - Dog's info
@@ -9,7 +9,6 @@
 *
 * Description: Defines a new type called 'dog' that stores info about a dog
 */
-
 struct dog
 {
 	char *name;
