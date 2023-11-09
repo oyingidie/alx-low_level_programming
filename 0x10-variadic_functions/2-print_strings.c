@@ -3,9 +3,9 @@
 #include <stdarg.h>
 
 /**
- * print_strings - Displays variable number of strings seperated
- * by given seperator
- * @separator: Pointer to string containing seperator
+ * print_strings - Displays variable number of strings separated
+ * by given separator
+ * @separator: Pointer to string containing separator
  * @n: Number of strings passed to function
  * @...: Indicator for variable number of strings
  */
