@@ -3,8 +3,8 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - Displays variable number of numbers seperated
- * by given seperator
+ * print_numbers - Displays variable number of numbers separated
+ * by given separator
  * @separator: String to be printed between numbers
  * @n: Number of integers passed to the function
  * @...: Indicator for variable number of numbers
