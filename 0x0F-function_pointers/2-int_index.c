@@ -5,7 +5,7 @@
  * @array: Pointer to array
  * @size: Size of elements in array
  * @cmp: Pointer to comparison function
- * 
+ *
  * Return: Index of first element. -1, if size <= 0
  */
 
