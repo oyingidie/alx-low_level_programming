@@ -4,7 +4,7 @@
  * sum_listint - Adds vlaue to each node to running total
  * @head: Pointer to the head of a singly linked list
  *
- * Return: The sum of all the data of the linked list
+ * Return: The sum of all the data of the linked list, or 0 if list is empty
  */
 
 int sum_listint(listint_t *head)
