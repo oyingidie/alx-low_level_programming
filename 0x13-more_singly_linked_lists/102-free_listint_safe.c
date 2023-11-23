@@ -1,48 +1,25 @@
 #include "lists.h"
 
 /**
- * looped_listint_count - Calculates length of the loop
+ * free_listp2 - Calculates length of the loop
  * @head: Pointer to the head of the list
- *
- * Return: Number of nodes in the loop
  */
 
-size_t looped_listint_count(listint_t *head)
+void free_listp2(listp_t **head)
 {
-	listint_t *current, *loop_start;
-	size_t nodes = 1;
+	listp_t *temp;
+	listp_t *curr;
 
-	if (head == NULL || head->next == NULL)
-		return (0);
-
-	current = head->next;
-	loop_start = (loop_start->next)->next;
-
-	while (loop_start)
+	if (head != NULL)
 	{
-		if (current == loop_start)
+		curr = *head;
+		while ((temp = curr) != NULL)
 		{
-			current = head;
-			while (current != loop_start)
-			{
-				nodes++;
-				current = current->next;
-				loop_start = loop_start->next;
-			}
-			current = current->next;
-			while (current != loop_start)
-			{
-				nodes++;
-				current = current->next;
-			}
-			return (nodes);
+			curr = curr->next;
+			free(temp);
 		}
-
-		current = current->next;
-		loop_start = (loop_start->next)->next;
+		*head = NULL;
 	}
-
-	return (0);
 }
 
 /**
@@ -55,32 +32,42 @@ size_t looped_listint_count(listint_t *head)
 
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *tmp;
-	size_t nodes, index;
+	size_t nodes = 0;
+	listp_t *hptr, *new, *add;
+	listint_t *curr;
 
-	nodes = looped_listint_count(*h);
-
-	if (nodes == 0)
+	hptr = NULL;
+	while (*h != NULL)
 	{
-		for (; h != NULL && *h != NULL; nodes++)
+		new = malloc(sizeof(listp_t));
+
+		if (new == NULL)
+			exit(98);
+
+		new->p = (void *)*h;
+		new->next = hptr;
+		hptr = new;
+
+		add = hptr;
+
+		while (add->next != NULL)
 		{
-			tmp = (*h)->next;
-			free(*h);
-			*h = tmp;
+			add = add->next;
+			if (*h == add->p)
+			{
+				*h = NULL;
+				free_listp2(&hptr);
+				return (nodes);
+			}
 		}
+		curr = *h;
+		*h = (*h)->next;
+		free(curr);
+		nodes++;
 	}
 
-	else
-	{
-		for (index = 0; index < nodes; index++)
-		{
-			tmp = (*h)->next;
-			free(*h);
-			*h = tmp;
-		}
-		*h = NULL;
-	}
+	*h = NULL;
+	free_listp2(&hptr);
 
-	h = NULL;
 	return (nodes);
 }
