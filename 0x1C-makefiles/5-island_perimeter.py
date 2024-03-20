@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""
-return the perimeter of an island
-the 'grid' is a list of list of integers
-water zone is represented with 0 & land zone with 1
-"""
+# island perimeter measuring function
+
 def island_perimeter(grid):
+    """
+    return the perimeter of an island
+    the 'grid' is a list of list of integers
+    water zone is represented with 0 & land zone with 1
+    """
     width = len(grid[0])
     height = len(grid)
     edges = 0
