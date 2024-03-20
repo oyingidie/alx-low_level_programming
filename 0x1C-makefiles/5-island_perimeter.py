@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """define an island perimeter measuring function"""
-
 def island_perimeter(grid):
     """return the perimeter of an island
     the 'grid' is a list of list of integers
@@ -10,7 +9,6 @@ def island_perimeter(grid):
     height = len(grid)
     edges = 0
     size = 0
-
     for i in range(height):
         for j in range(width):
             if grid[i][j] == 1:
