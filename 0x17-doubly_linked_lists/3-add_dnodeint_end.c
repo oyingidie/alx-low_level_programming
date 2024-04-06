@@ -1,7 +1,11 @@
 #include "lists.h"
 
 /**
+ * add_dnodeint_end -
+ * @head:
+ * @n:
  *
+ * Return: Address of the new element, or NULL if it fails
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
