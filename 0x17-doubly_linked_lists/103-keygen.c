@@ -70,7 +70,7 @@ int f6(char *usrn)
 		vch += 1;
 	}
 
-	return (((unsign4ed int)ch ^ 229) & 63);
+	return (((unsigned int)ch ^ 229) & 63);
 }
 
 /**
