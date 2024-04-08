@@ -1,3 +1,2 @@
-Task_#0
-
-Coded functions found in the libdynamic.so file
+- Coded functions found in the libdynamic.so file for Task#0
+- Operation functions for Task#2
