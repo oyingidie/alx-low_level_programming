@@ -5,27 +5,28 @@
  * using the Linear Search Algorithm
  * @array: Pointer to first element of the array
  * @size: Number of elements in array
- * @value: Value to search for
+ * @value: Value to search
  *
  * Return: First index where value is located, -1 if value
  * is not in array or if array is NULL
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t x;
+	size_t i;
 
 	if (array == NULL)
 	{
 		return (-1);
 	}
 
-	for (x = 0; x < size; x++)
+	for (i = 0; i < size; i++)
 	{
-		printf("Value checked array[%li] = [%i]\n", x, array[x]);
-		if (array[x] == value)
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+		if (array[i] == value)
 		{
-			return (x);
+			return (i);
 		}
 	}
+
 	return (-1);
 }
